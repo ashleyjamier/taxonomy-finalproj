@@ -31,7 +31,7 @@ pip installed
 Setup Instructions
 
 1. Clone the Repo
-    git clone https://github.com/your-username/taxonomy-explorer.git
+    git clone https://github.com/ashleyjamier/taxonomy-finalproj
     cd taxonomy-explorer
 2. Create Virtual Environment
     python -m venv venv
