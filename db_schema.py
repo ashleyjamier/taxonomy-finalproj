@@ -23,8 +23,8 @@ class TaxonName(SQLModel, table=True):
 
 
 # Replace with your actual file path
-DATA_FILE = "data_files/small_names.dmp"
-NODES_DATA = "data_files/small_nodes.dmp"
+DATA_FILE = "small_names.dmp"
+NODES_DATA = "small_nodes.dmp"
 
 sqlite_file = "taxonomyq.db"
 engine = create_engine(f"sqlite:///{sqlite_file}", echo=False)
