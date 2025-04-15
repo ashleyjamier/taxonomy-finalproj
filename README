@@ -1,0 +1,77 @@
+
+A pink-themed Single Page Application (SPA) built using:
+
+FastAPI → RESTful backend with SQLite
+SQLModel → Database Models
+Dash → Interactive Search UI
+Dash Bootstrap Components → Clean layout
+Requests → API Communication
+Features
+
+Search for taxonomic names (by keyword & search mode)
+View Taxon details (parent, children, names)
+Responsive & stylish pink-themed UI
+SQLite database for easy local development
+Built-in pagination for search results
+Project Structure
+
+taxonomy-explorer/
+│
+├── app.py             → Dash Frontend (Pink SPA)
+├── main.py            → FastAPI Entrypoint
+├── api.py             → FastAPI API Routes
+├── db_schema.py       → SQLModel ORM Models
+├── taxonomy.db        → SQLite Database File
+├── requirements.txt   → Python Dependencies
+└── README.md          → Setup Instructions
+Prerequisites
+
+Python 3.8+
+pip installed
+Setup Instructions
+
+1. Clone the Repo
+    git clone https://github.com/your-username/taxonomy-explorer.git
+    cd taxonomy-explorer
+2. Create Virtual Environment
+    python -m venv venv
+    source venv/bin/activate  # Mac/Linux
+    venv\Scripts\activate     # Windows
+
+3. Install Dependencies
+    pip install -r requirements.txt
+    Running the Application
+
+1. Start the FastAPI Backend
+    uvicorn main:app --reload
+    Test in browser:
+    http://localhost:8000/docs
+
+2. Start the Dash Frontend
+    In a new terminal:
+    python app.py
+
+    Visit:
+        http://localhost:8051
+
+Search Modes Available
+
+    contains
+    starts with
+    ends with
+    Notes
+
+Database file: taxonomy.db
+Customize colors in app.py → PINK_STYLE and BUTTON_STYLE
+Add new endpoints in api.py
+
+Example Usage
+Search for:
+    eukaryote
+Results:
+    List of taxon names
+    Click taxon ID → View full details (parent, children, names)
+
+
+License
+MIT License
